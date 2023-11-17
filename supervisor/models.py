@@ -116,6 +116,8 @@ class News(models.Model):
 class TA(models.Model):
     email = models.CharField(max_length=100)
     instructor = models.BooleanField(default=False)
+    sg_access = models.BooleanField(default=False)
+    cw_access = models.BooleanField(default=False)
 
 
 class Diff(models.Model):
